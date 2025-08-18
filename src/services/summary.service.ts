@@ -1,5 +1,5 @@
 import type { PrismaClient } from '@prisma/client';
-import { TransactionRepository } from '../repositories/transaction.repository';
+import { TransactionRepository } from '../repositories/transaction.repository.js';
 
 export class SummaryService {
   private readonly transactionRepository: TransactionRepository;

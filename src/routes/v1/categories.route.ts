@@ -1,7 +1,7 @@
 import type { FastifyInstance } from 'fastify';
-import { CategoriesService } from '../../services/categories.service';
-import { CategoriesHandler } from '../../handlers/categories.handler';
-import { verifyJWT } from '../../middlewares/auth.middleware';
+import { CategoriesService } from '../../services/categories.service.js';
+import { CategoriesHandler } from '../../handlers/categories.handler.js';
+import { verifyJWT } from '../../middlewares/auth.middleware.js';
 
 export default async function categoriesRoutes(app: FastifyInstance) {
   const service = new CategoriesService(app.prisma);

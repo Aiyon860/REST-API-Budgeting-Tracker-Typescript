@@ -1,7 +1,7 @@
 import type { PrismaClient, CategoryType } from '@prisma/client';
-import { CategoryRepository } from '../repositories/category.repository';
-import type { UpdateCategoryBody } from '../schemas/category.schema';
-import { cleanUndefined } from '../utils/object.util';
+import { CategoryRepository } from '../repositories/category.repository.js';
+import type { UpdateCategoryBody } from '../schemas/category.schema.js';
+import { cleanUndefined } from '../utils/object.util.js';
 
 export class CategoriesService {
   private readonly categoryRepository: CategoryRepository;

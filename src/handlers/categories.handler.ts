@@ -1,5 +1,5 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { CategoriesService } from '../services/categories.service';
+import { CategoriesService } from '../services/categories.service.js';
 import { createCategorySchema, updateCategorySchema } from '../schemas/category.schema.js';
 
 export class CategoriesHandler {

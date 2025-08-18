@@ -1,9 +1,9 @@
 import fastify from 'fastify';
 import cors from '@fastify/cors';
-import prismaPlugin from './plugins/prisma.plugin';
-import jwtPlugin from './plugins/jwt.plugin';
+import prismaPlugin from './plugins/prisma.plugin.js';
+import jwtPlugin from './plugins/jwt.plugin.js';
 import formBodyPlugin from '@fastify/formbody';
-import v1Routes from './routes/v1';
+import v1Routes from './routes/v1/index.js';
 
 export function buildApp() {
   const app = fastify({ logger: true });

@@ -1,7 +1,7 @@
 import type { FastifyInstance } from 'fastify';
-import { AccountsService } from '../../services/accounts.service';
-import { AccountsHandler } from '../../handlers/accounts.handler';
-import { verifyJWT } from '../../middlewares/auth.middleware';
+import { AccountsService } from '../../services/accounts.service.js';
+import { AccountsHandler } from '../../handlers/accounts.handler.js';
+import { verifyJWT } from '../../middlewares/auth.middleware.js';
 
 export default async function accountsRoutes(app: FastifyInstance) {
   const service = new AccountsService(app.prisma);

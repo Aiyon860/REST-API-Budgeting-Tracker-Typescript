@@ -1,6 +1,6 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { loginSchema } from '../schemas/auth.schema';
-import { AuthService } from '../services/auth.service';
+import { loginSchema } from '../schemas/auth.schema.js';
+import { AuthService } from '../services/auth.service.js';
 
 export class AuthHandler {
   constructor(private authService: AuthService) { }

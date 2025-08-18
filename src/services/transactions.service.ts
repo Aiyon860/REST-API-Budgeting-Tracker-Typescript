@@ -1,7 +1,7 @@
 import type { PrismaClient, TransactionType } from '@prisma/client';
-import { TransactionRepository } from '../repositories/transaction.repository';
-import type { CreateTransactionBody, ListTransactionQuery, UpdateTransactionBody } from '../schemas/transaction.schema';
-import { cleanUndefined } from '../utils/object.util';
+import { TransactionRepository } from '../repositories/transaction.repository.js';
+import type { CreateTransactionBody, ListTransactionQuery, UpdateTransactionBody } from '../schemas/transaction.schema.js';
+import { cleanUndefined } from '../utils/object.util.js';
 
 export class TransactionsService {
   private readonly transactionRepository: TransactionRepository;

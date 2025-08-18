@@ -1,7 +1,7 @@
 import type { FastifyInstance } from 'fastify';
-import { SummaryService } from '../../services/summary.service';
-import { SummaryHandler } from '../../handlers/summary.handler';
-import { verifyJWT } from '../../middlewares/auth.middleware';
+import { SummaryService } from '../../services/summary.service.js';
+import { SummaryHandler } from '../../handlers/summary.handler.js';
+import { verifyJWT } from '../../middlewares/auth.middleware.js';
 
 export default async function summaryRoutes(app: FastifyInstance) {
   const service = new SummaryService(app.prisma);

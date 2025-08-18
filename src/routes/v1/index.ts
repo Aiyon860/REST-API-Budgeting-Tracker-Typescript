@@ -1,11 +1,11 @@
 import type { FastifyInstance } from "fastify";
-import healthRoutes from "./health.route";
-import authRoutes from "./auth.route";
-import accountsRoutes from "./accounts.route";
-import categoriesRoutes from "./categories.route";
-import transactionsRoutes from "./transactions.route";
-import budgetsRoutes from "./budgets.route";
-import summaryRoutes from "./summary.route";
+import healthRoutes from "./health.route.js";
+import authRoutes from "./auth.route.js";
+import accountsRoutes from "./accounts.route.js";
+import categoriesRoutes from "./categories.route.js";
+import transactionsRoutes from "./transactions.route.js";
+import budgetsRoutes from "./budgets.route.js";
+import summaryRoutes from "./summary.route.js";
 
 export default async function v1Routes(app: FastifyInstance) {
   await healthRoutes(app);

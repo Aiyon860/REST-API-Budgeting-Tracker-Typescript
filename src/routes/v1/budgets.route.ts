@@ -1,7 +1,7 @@
 import type { FastifyInstance } from "fastify";
-import { BudgetsService } from "../../services/budgets.service";
-import { BudgetsHandler } from "../../handlers/budgets.handler";
-import { verifyJWT } from "../../middlewares/auth.middleware";
+import { BudgetsService } from "../../services/budgets.service.js";
+import { BudgetsHandler } from "../../handlers/budgets.handler.js";
+import { verifyJWT } from "../../middlewares/auth.middleware.js";
 
 export default async function budgetsRoutes(app: FastifyInstance) {
   const service = new BudgetsService(app.prisma);

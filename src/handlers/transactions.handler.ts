@@ -1,6 +1,6 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
-import { TransactionsService } from "../services/transactions.service";
-import { createTransactionSchema, listTransactionSchema, updateTransactionSchema } from "../schemas/transaction.schema";
+import { TransactionsService } from "../services/transactions.service.js";
+import { createTransactionSchema, listTransactionSchema, updateTransactionSchema } from "../schemas/transaction.schema.js";
 
 export class TransactionsHandler {
   constructor(private readonly transactionsService: TransactionsService) { }

@@ -1,6 +1,6 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { AccountsService } from '../services/accounts.service';
-import { createAccountSchema, idParamSchema, updateAccountSchema } from '../schemas/account.schema';
+import { AccountsService } from '../services/accounts.service.js';
+import { createAccountSchema, idParamSchema, updateAccountSchema } from '../schemas/account.schema.js';
 
 export class AccountsHandler {
   constructor(private readonly accountsService: AccountsService) { };

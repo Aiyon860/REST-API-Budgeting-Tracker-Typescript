@@ -1,6 +1,6 @@
 import { CategoryType, PrismaClient, TransactionType } from '@prisma/client';
 import bcrypt from 'bcrypt';
-import { env } from '../env';
+import { env } from '../env/index.js';
 
 const prisma = new PrismaClient();
 

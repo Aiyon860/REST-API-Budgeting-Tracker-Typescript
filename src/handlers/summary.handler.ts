@@ -1,5 +1,5 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { SummaryService } from '../services/summary.service';
+import { SummaryService } from '../services/summary.service.js';
 
 export class SummaryHandler {
   constructor(private readonly summaryService: SummaryService) { }

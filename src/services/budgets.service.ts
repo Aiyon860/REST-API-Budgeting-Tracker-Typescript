@@ -1,8 +1,8 @@
 import type { PrismaClient } from '@prisma/client';
-import { BudgetRepository } from '../repositories/budget.repository';
-import { TransactionRepository } from '../repositories/transaction.repository';
-import type { UpdateBudgetBody } from '../schemas/budget.schema';
-import { cleanUndefined } from '../utils/object.util';
+import { BudgetRepository } from '../repositories/budget.repository.js';
+import { TransactionRepository } from '../repositories/transaction.repository.js';
+import type { UpdateBudgetBody } from '../schemas/budget.schema.js';
+import { cleanUndefined } from '../utils/object.util.js';
 
 export class BudgetsService {
   private readonly budgetRepository: BudgetRepository;

@@ -1,6 +1,6 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { BudgetsService } from '../services/budgets.service';
-import { budgetProgressParam, createBudgetSchema, updateBudgetSchema } from '../schemas/budget.schema';
+import { BudgetsService } from '../services/budgets.service.js';
+import { budgetProgressParam, createBudgetSchema, updateBudgetSchema } from '../schemas/budget.schema.js';
 
 export class BudgetsHandler {
   constructor(private readonly budgetsService: BudgetsService) { }

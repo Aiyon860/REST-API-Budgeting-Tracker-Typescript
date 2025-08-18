@@ -1,7 +1,7 @@
 import type { PrismaClient, AccountType } from '@prisma/client';
-import { AccountRepository } from '../repositories/account.repository';
-import { cleanUndefined } from '../utils/object.util';
-import type { UpdateAccountBody } from '../schemas/account.schema';
+import { AccountRepository } from '../repositories/account.repository.js';
+import { cleanUndefined } from '../utils/object.util.js';
+import type { UpdateAccountBody } from '../schemas/account.schema.js';
 
 export class AccountsService {
   private readonly accountRepository: AccountRepository;

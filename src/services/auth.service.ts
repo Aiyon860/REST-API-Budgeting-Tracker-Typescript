@@ -1,7 +1,7 @@
 import type { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcrypt';
 import type { FastifyInstance } from 'fastify';
-import { UserRepository } from '../repositories/user.repository';
+import { UserRepository } from '../repositories/user.repository.js';
 
 export class AuthService {
   private readonly userRepository: UserRepository;
