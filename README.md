@@ -27,13 +27,13 @@ Request validation is powered by **Zod**, persistence by **Prisma** (PostgreSQL)
 
 ---
 
-## tech stack
+## Tech Stack
 
-- **typescript** + **fastify** (esm)
-- **prisma** (postgresql)
-- **zod** for validation
-- **jwt** for auth
-- **pnpm** + **tsx** for dev
+- **Typescript** + **Fastify** (ESM)
+- **Prisma** (PostgreSQL)
+- **Zod** for Validation
+- **JWT** for Auth
+- **npm** + **tsx** for Development
 
 ---
 
