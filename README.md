@@ -155,9 +155,9 @@ HOST=0.0.0.0
 
 ```bash
 npm i
-npm prisma:generate
-npm prisma:migrate
-npm seed
+npm run prisma:generate
+npm run prisma:migrate
+npm run seed
 npm run dev
 ```
 
